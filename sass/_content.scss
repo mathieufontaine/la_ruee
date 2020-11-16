@@ -1,5 +1,10 @@
 .content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   .container {
+    flex-grow: 1;
+    margin: 4rem auto;
     div {
       width: 100%;
       margin-bottom: 4rem;
@@ -10,6 +15,7 @@
         width: 100%;
         display: flex;
         align-items: center;
+        transform: translate(-150%, 0px);
         img {
           margin: 2rem auto;
           width: 70%;
@@ -42,6 +48,37 @@
             font-weight: 200;
           }
         }
+      }
+    }
+  }
+  .subscription-box {
+    width: 100%;
+    margin: 0 auto;
+    background: $gold-color;
+    .container {
+      margin: auto;
+      height: 100%;
+    }
+    form {
+      display: flex;
+      width: 80%;
+      margin: auto;
+      justify-content: space-around;
+      align-items: center;
+      padding: 4rem;
+
+      label {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+      }
+      .email-input {
+        background: white;
+        height: 50px;
+        width: 50%;
+        border: 2px solid black;
+        color: black;
+        //   margin-bottom: 1rem;
       }
     }
   }

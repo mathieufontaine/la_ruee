@@ -15,29 +15,41 @@
             <div class="overlay"></div>
             <div class="container">
                 <img src="img/la_ruee_logo.png" alt="La Ruée" class="logo">
-                <h2>Recevez chaque mois des pépites<span class="yellow">*</span> dans votre boite mail !</h2>
+                <h2 class="subtitle">Recevez chaque mois des pépites<span class="yellow">*</span> dans votre boite mail
+                    !</h2>
                 <div class="email-box">
-                    <form action="">
+                    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                        target="_blank">
                         <label for="email">Votre Email</label>
-                        <input type="text" name="email" id="email-input">
-                        <input type="submit" value="J'en suis !" class="btn">
+                        <input class="email-input" type="text" value="" name="email" id="mce-EMAIL"
+                            placeholder="indianajones@gmail.com" required>
+                        <input type="submit" value="J'en suis !" class="btn" name="subscribe"
+                            id="mc-embedded-subscribe">
                     </form>
                 </div>
                 <div class="definition">
                     <p><span class="yellow">* Pépite</span> (n.f) :</p>
                     <p>Contenu cool au format divers et varié défini comme tel de façon totalement arbitraire</p>
                 </div>
-            </div>
+                <div id="scrolldown">
+                    <a href="#main-content">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
             </div>
         </section>
-        <section class="content">
+        <section class="content" id="main-content">
             <div class="container">
-                <div>
+                <div class="description">
                     <h2>Qu'attendre de La Ruée ?</h2>
                     <p>La Ruée est une newsletter mensuelle dans laquelle une fine équipe de bons vivants sélectionne
-                        pour vous 3 ou 4 pépites culturelles, qui feront de vous quelqu'un de bien plus distingué et
+                        pour vous chaque mois <strong>3 ou 4 pépites culturelles</strong>, qui feront de vous quelqu'un
+                        de bien plus distingué et
                         intéressant en société.</p>
-                    <p>Cinéma, séries, musique, lecture, culture web : on fouille l'internet pour vous en extraire les
+                    <p><strong>Cinéma, séries, musique, lecture, culture web</strong> : on fouille l'internet pour vous
+                        en extraire les
                         meilleures pépites !</p>
                     <div class="illustration">
                         <img src="img/la_ruee_illustration.png" alt="la_ruee_illustration">
@@ -70,16 +82,16 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        <div class="subscription-box">
-            <div class="container">
-                <form action="">
-                    <label for="email">Votre Email:</label>
-                    <input type="text" name="email" id="email-input">
-                    <input type="submit" value="J'en suis !" class="btn">
-                </form>
+            <div class="subscription-box">
+                <div class="container">
+                    <form action="">
+                        <label for="email">Votre Email:</label>
+                        <input type="text" placeholder="indianajones@gmail.com" name="email" class="email-input">
+                        <input type="submit" value="J'en suis !" class="btn">
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
         <footer>
             <div class="overlay"></div>
             <ul>
@@ -90,7 +102,11 @@
         </footer>
     </main>
     <script src="https://kit.fontawesome.com/f3e2209c65.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+        integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,7 @@ $gold-color: #faba19;
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 
@@ -86,27 +87,20 @@ img {
   }
 }
 
-.btn a:hover {
-  background: rgba($color: #000000, $alpha: 0.5);
-}
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
+.btn:hover {
+  background: rgba($color: #2f618b, $alpha: 1);
 }
 
 .container {
   position: relative;
   width: 80%;
-  height: 100%;
+  //   height: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 section {
   position: relative;
-  padding: 4rem 0;
 }
 
 .flex {
@@ -133,33 +127,9 @@ section {
   filter: blur(6px);
 }
 
-.subscription-box {
-  width: 100%;
-  margin: 0 auto;
-  background: $gold-color;
-
-  form {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    padding: 4rem;
-
-    label {
-      font-size: 2rem;
-      font-weight: bold;
-      color: black;
-    }
-    #email-input {
-      background: white;
-      height: 50px;
-      width: 50%;
-      border: 2px solid black;
-      color: black;
-      //   margin-bottom: 1rem;
-    }
-  }
+.email-input::placeholder {
+  padding-left: 1rem;
+  font-style: italic;
 }
 
 @import "showcase";
