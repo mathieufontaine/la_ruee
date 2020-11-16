@@ -1,0 +1,53 @@
+.showcase {
+  position: relative;
+  height: 80vh;
+  background: url("/public/img/la_ruee_background.jpg") no-repeat center
+    center/cover;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    .logo {
+      height: 200px;
+      width: auto;
+    }
+    h2 {
+      color: black;
+    }
+    .email-box {
+      width: 90%;
+      margin: 0 auto;
+      background: $gold-color;
+
+      form {
+        width: 60%;
+        margin: auto;
+        label {
+          font-size: 2rem;
+          font-weight: bold;
+          color: black;
+        }
+        padding: 2rem;
+        #email-input {
+          background: white;
+          height: 50px;
+          width: 100%;
+          border: 2px solid black;
+          color: black;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .definition {
+      align-self: flex-start;
+      p {
+        text-align: left;
+        color: white;
+      }
+    }
+  }
+}

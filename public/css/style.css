@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css?family=Arial&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: white;
+  color: #3d3d3c;
+  line-height: 1.6;
+  height: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0d92cc;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0d92cc;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  background: #0d92cc;
+  color: #fff;
+  padding: 1rem 3rem;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+.btn a {
+  width: 100%;
+  height: 100%;
+}
+
+.btn a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.yellow {
+  color: #faba19;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+
+.subscription-box {
+  width: 100%;
+  margin: 0 auto;
+  background: #faba19;
+}
+
+.subscription-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+}
+
+.subscription-box form label {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.subscription-box form #email-input {
+  background: white;
+  height: 50px;
+  width: 50%;
+  border: 2px solid black;
+  color: black;
+}
+
+.showcase {
+  position: relative;
+  height: 80vh;
+  background: url("/public/img/la_ruee_background.jpg") no-repeat center center/cover;
+}
+
+.showcase .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.showcase .container .logo {
+  height: 200px;
+  width: auto;
+}
+
+.showcase .container h2 {
+  color: black;
+}
+
+.showcase .container .email-box {
+  width: 90%;
+  margin: 0 auto;
+  background: #faba19;
+}
+
+.showcase .container .email-box form {
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.showcase .container .email-box form label {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.showcase .container .email-box form #email-input {
+  background: white;
+  height: 50px;
+  width: 100%;
+  border: 2px solid black;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.showcase .container .definition {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.showcase .container .definition p {
+  text-align: left;
+  color: white;
+}
+
+.content .container div {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.content .container div h2 {
+  margin-bottom: 2rem;
+}
+
+.content .container div .illustration {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .container div .illustration img {
+  margin: 2rem auto;
+  width: 70%;
+}
+
+.content .container .wagons ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.content .container .wagons ul li a {
+  margin-right: 0.5rem;
+}
+
+.content .container .wagons ul li a h3 {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.content .container .wagons ul li i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #faba19;
+}
+
+.content .container .wagons ul li:last-child {
+  color: gray;
+}
+
+.content .container .wagons ul li:last-child a {
+  color: gray;
+}
+
+.content .container .wagons ul li:last-child h3 {
+  font-weight: 200;
+}
+
+footer {
+  position: relative;
+  height: 15vh;
+  background: url("/public/img/la_ruee_background.jpg") no-repeat bottom center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+footer ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+footer ul li a i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
