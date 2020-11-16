@@ -11,12 +11,19 @@
 
 <body>
     <main>
+        <div class="countdown-box">
+            <h3>La prochaine pépite sera délivrée dans: </h3>
+            <div id="countdown"></div>
+        </div>
         <section class="showcase">
             <div class="overlay"></div>
+
             <div class="container">
+
                 <img src="img/la_ruee_logo.png" alt="La Ruée" class="logo">
                 <h2 class="subtitle">Recevez chaque mois des pépites<span class="yellow">*</span> dans votre boite mail
                     !</h2>
+
                 <div class="email-box">
                     <form
                         action="https://gmail.us10.list-manage.com/subscribe/post?u=3921cbdce8a144aa655b32687&amp;id=0754868d54"
@@ -45,7 +52,7 @@
                     <p>Contenu cool au format divers et varié défini comme tel de façon totalement arbitraire</p>
                 </div>
                 <div id="scrolldown">
-                    <a href="#main-content">
+                    <a href="#contenu">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -53,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section class="content" id="main-content">
+        <section class="content" id="contenu">
             <div class="container">
                 <div class="description">
                     <h2>Qu'attendre de La Ruée ?</h2>
@@ -73,15 +80,15 @@
                     <ul>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <a href="">
+                            <a href="https://mailchi.mp/a13c5c44c030/wagon-1?e=03226fcc0c" target="_blank">
                                 <h3>Wagon #1 </h3>
                             </a>
                             <h3> - Septembre 2020</h3>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <a href="">
-                                <h3>Wagon #2 </h3>
+                            <a href="https://mailchi.mp/00e38315dc40/wagon-5240065" target="_blank">
+                                <h3>Wagon #3 </h3>
                             </a>
                             <h3> - October 2020</h3>
                         </li>
@@ -90,7 +97,7 @@
                             <a href="">
                                 <h3>Wagon #2 </h3>
                             </a>
-                            <h3> - November 2020</h3>
+                            <h3> - November 2020 (à venir)</h3>
                         </li>
                     </ul>
                 </div>
@@ -124,7 +131,8 @@
         <footer>
             <div class="overlay"></div>
             <ul>
-                <li><a href=""><i class="fab fa-facebook"></i> Partager</a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank"><i
+                            class="fab fa-facebook"></i> Partager</a></li>
                 <li><a href=""><i class="fab fa-twitter"></i> Tweeter</a></li>
                 <li><a href=""><i class="fab fa-google"></i> Ressuciter G+</a></li>
             </ul>
@@ -135,7 +143,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
         integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
         crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

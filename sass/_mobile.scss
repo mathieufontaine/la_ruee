@@ -20,6 +20,13 @@
   .container {
     width: 80%;
   }
+  .countdown-box {
+    flex-direction: column;
+    height: 7vh;
+  }
+  .showcase {
+    height: 93vh;
+  }
   .email-box,
   .subscription-box {
     width: 100% !important;

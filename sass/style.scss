@@ -125,11 +125,32 @@ section {
   -o-filter: blur(6px);
   -ms-filter: blur(6px);
   filter: blur(6px);
+  z-index: 0;
 }
 
 .email-input::placeholder {
   padding-left: 1rem;
   font-style: italic;
+}
+
+.countdown-box {
+  background: rgba(white, 0.3);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  //   background: rgba($color: white, $alpha: 0.5);
+  font-size: 2rem;
+  width: 100%;
+  height: 5vh;
+  z-index: 2;
+  h3 {
+    font-weight: 200;
+    margin-right: 1rem;
+  }
+  #countdown {
+    font-weight: 600;
+  }
 }
 
 @import "showcase";

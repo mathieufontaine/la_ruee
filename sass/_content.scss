@@ -23,29 +23,32 @@
       }
     }
     .wagons {
-      ul li {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        a {
-          margin-right: 0.5rem;
-          h3 {
-            font-weight: 600;
-            text-decoration: underline;
-          }
-        }
-        i {
-          font-size: 2rem;
-          margin-right: 1rem;
-          color: $gold-color;
-        }
-        &:last-child {
-          color: gray;
+      ul {
+        margin-top: 2rem;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
           a {
-            color: gray;
+            margin-right: 0.5rem;
+            h3 {
+              font-weight: 600;
+              text-decoration: underline;
+            }
           }
-          h3 {
-            font-weight: 200;
+          i {
+            font-size: 2rem;
+            margin-right: 1rem;
+            color: $gold-color;
+          }
+          &:last-child {
+            color: gray;
+            a {
+              color: gray;
+            }
+            h3 {
+              font-weight: 200;
+            }
           }
         }
       }
