@@ -516,6 +516,7 @@ footer ul li a i {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-right: 0;
+    width: 100%;
   }
   .content .subscription-box form > div .mc-field-group .email-input {
     width: 100%;
