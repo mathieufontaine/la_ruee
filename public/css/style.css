@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Arial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 *,
 *:before,
 *:after {
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: white;
   color: #3d3d3c;
   line-height: 1.6;
@@ -182,7 +182,7 @@ section {
   position: relative;
   height: 95vh;
   padding: 4rem 0;
-  background: url("/public/img/la_ruee_background.jpg") no-repeat center center/cover;
+  background: url("img/la_ruee_background.jpg") no-repeat center center/cover;
 }
 
 .showcase .container {
@@ -457,7 +457,7 @@ section {
 footer {
   position: relative;
   height: 15vh;
-  background: url("/public/img/la_ruee_background.jpg") no-repeat bottom center/cover;
+  background: url("img/la_ruee_background.jpg") no-repeat bottom center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
