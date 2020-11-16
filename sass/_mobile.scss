@@ -1,0 +1,42 @@
+@media (max-width: 900px) {
+  .content .subscription-box form > div {
+    flex-direction: column;
+    padding: 4rem 0;
+    margin: auto;
+    .mc-field-group {
+      flex-direction: column;
+      margin-right: 0;
+      .email-input {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    width: 80%;
+  }
+  .email-box,
+  .subscription-box {
+    width: 100% !important;
+    form > div {
+      width: 90% !important;
+      margin: auto;
+    }
+  }
+  .showcase .container {
+    .logo {
+      height: 100px;
+    }
+  }
+  .content .container div .illustration img {
+    width: 100%;
+  }
+  .content .subscription-box form .email-input {
+    width: 100%;
+  }
+}

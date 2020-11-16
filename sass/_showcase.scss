@@ -23,23 +23,25 @@
       width: 90%;
       margin: 0 auto;
       background: $gold-color;
+      padding: 2rem;
 
-      form {
+      form > div {
         width: 60%;
         margin: auto;
-        label {
-          font-size: 2rem;
-          font-weight: bold;
-          color: black;
-        }
-        padding: 2rem;
-        .email-input {
-          background: white;
-          height: 50px;
-          width: 100%;
-          border: 2px solid black;
-          color: black;
-          margin-bottom: 1rem;
+        .mc-field-group {
+          label {
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+          }
+          .email-input {
+            background: white;
+            height: 50px;
+            width: 100%;
+            border: 2px solid black;
+            color: black;
+            margin-bottom: 1rem;
+          }
         }
       }
     }
@@ -87,17 +89,17 @@
         -webkit-animation-delay: 0.3s;
         animation-delay: 0.3s;
       }
-      //   @-webkit-keyframes sdb07 {
-      //     0% {
-      //       opacity: 0;
-      //     }
-      //     50% {
-      //       opacity: 1;
-      //     }
-      //     100% {
-      //       opacity: 0;
-      //     }
-      //   }
+      @-webkit-keyframes sdb07 {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
       @keyframes sdb07 {
         0% {
           opacity: 0;

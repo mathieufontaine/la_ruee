@@ -5,7 +5,7 @@
   .container {
     flex-grow: 1;
     margin: 4rem auto;
-    div {
+    > div {
       width: 100%;
       margin-bottom: 4rem;
       h2 {
@@ -59,26 +59,33 @@
       margin: auto;
       height: 100%;
     }
-    form {
+    form > div {
       display: flex;
-      width: 80%;
+      width: 100%;
       margin: auto;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       padding: 4rem;
-
-      label {
-        font-size: 2rem;
-        font-weight: bold;
-        color: black;
-      }
-      .email-input {
-        background: white;
-        height: 50px;
-        width: 50%;
-        border: 2px solid black;
-        color: black;
-        //   margin-bottom: 1rem;
+      .mc-field-group {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+        label {
+          font-size: 2rem;
+          font-weight: bold;
+          color: black;
+          margin-right: 1rem;
+        }
+        .email-input {
+          flex-grow: 1;
+          background: white;
+          height: 50px;
+          width: 5;
+          border: 2px solid black;
+          color: black;
+          //   margin-bottom: 1rem;
+        }
       }
     }
   }
